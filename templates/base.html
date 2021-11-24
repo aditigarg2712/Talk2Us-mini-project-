@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- for font-awesome from cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Talk_2_Us</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'blog:blog_list' %}">Blogs</a></li>
+            <li><a href="#footer">contact us</a></li>
+
+        </ul>
+    </div>
+
+
+    {% block container %}
+
+    {% endblock container %}
+
+    <footer class="footer">
+        <ul>
+            <li><a href="#">faq</a></li>
+            <li><a href="#">terms of use</a></li>
+            <li><a href="#">privacy notice</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">about us</a></li>
+        </ul>
+    </footer>
+    <!-- libary for rellax from cdnjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+        integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //  intit rellax
+        let rellax = new Rellax('.rellax');
+    </script>
+    .
+</body>
+
+</html>

@@ -1,1 +1,1 @@
-# talk2us
+# mini-project
